@@ -4,8 +4,10 @@ const functions = {
     return str === strRev;
   },
 
-  two: () => {
-    
+  two: (str) => {
+    let strRev = ''
+    str.split('').forEach(char => strRev = char + strRev )
+    return str === strRev
   }
 }
 
